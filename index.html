@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+    <div class="input">
+        <div id="input"></div>
+    </div>
+    <div class="container">
+        <div class="container-number">
+            <button class="btn" value="rad">Rad</button>
+            <button class="btn" value="%">%</button>
+            <button class="btn" value="x!">x!</button>
+            <button class="btn" value="(">(</button>
+            <button class="btn" value=")">)</button>
+            <button class="btn"  value="C" onclick="undo()">C</button>
+            <button class="btn" value="AC" onclick="clean()">AC</button>
+        </div>
+        <div class="container-number">
+            <button class="btn cl-b" value="lnv">lnv</button>
+            <button class="btn cl-b" value="sin">sin</button>
+            <button class="btn cl-b" value="ln">ln</button>
+            <button class="btn btn-num" value="7">7</button>
+            <button class="btn btn-num" value="8">8</button>
+            <button class="btn btn-num" value="9">9</button>
+            <button class="btn " value="/">÷</button>
+        </div>
+        <div class="container-number">
+            <button class="btn cl-b" value="π">π</button>
+            <button class="btn cl-b" value="cos">cos</button>
+            <button class="btn cl-b" value="log">log</button>
+            <button class="btn btn-num" value="4">4</button>
+            <button class="btn btn-num" value="5">5</button>
+            <button class="btn btn-num" value="6">6</button>
+            <button class="btn " value="*">×</button>
+        </div>
+        <div class="container-number">
+            <button class="btn cl-b"  value="e">e</button>
+            <button class="btn cl-b" value="tan">tan</button>
+            <button class="btn cl-b" value="√">√</button>
+            <button class="btn btn-num" value="1">1</button>
+            <button class="btn btn-num" value="2">2</button>
+            <button class="btn btn-num" value="3">3</button>
+            <button class="btn" value="-">-</button>
+        </div>
+        <div class="container-number">
+            <button class="btn cl-b" value="ans">Ans</button>
+            <button class="btn cl-b" value="exp">EXP</button>
+            <button class="btn cl-b" value="xy">x<sup>y</sup></button>
+            <button class="btn btn-num" value="0">0</button>
+            <button class="btn btn-num" value=".">.</button>
+            <button class="btn cl-blue result" onclick="equal()" value="=">=</button>
+            <button class="btn" value="+">+</button>
+        </div>
+    </div>
+</main>
+<script src="./app.js"></script>
+</body>
+</html>
